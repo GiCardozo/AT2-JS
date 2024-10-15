@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>User Registration</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="img/imagem_at2.jfif" alt="background" class="background-image"> 
+        </div>
+        <div class="register-container">
+            <h2>Register</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Username" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Email address" required>
+                </div>
+                <div class="separator"></div>
+                <div class="form-group">
+                    <input type="password" id="password" placeholder="Password (8 characters, at least 2 numbers)" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                </div>
+                <button type="submit" class="register-button" id="registerButton">REGISTER</button>
+            </form>
+
+            <div class="sign-in">
+                <p>Already have an account? <a href="#">Sign In</a></p>
+            </div>
+
+            <div class="separator"></div>
+
+            <div class="sign-in-buttons">
+                <button class="google-button"><i class="fa-brands fa-google"></i> SIGN UP WITH GOOGLE</button>
+                <button class="facebook-button"><i class="fa-brands fa-facebook"></i> SIGN UP WITH FACEBOOK</button>
+            </div>
+
+            <table id="userTable" class="user-table" hidden>
+                <thead>
+                    <tr>
+                        <th>Login</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

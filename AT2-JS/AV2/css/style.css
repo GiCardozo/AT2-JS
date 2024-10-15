@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #003366, #66a3ff); 
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 400px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.register-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    width: 400px; 
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.register-button {
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.sign-in {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+}
+
+.sign-in a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.separator {
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.sign-in-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.sign-in-buttons button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.google-button {
+    background-color: #DB4437;
+}
+
+.facebook-button {
+    background-color: #4267B2;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.user-table th, .user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.user-table th {
+    background-color: #007BFF;
+    color: white;
+}
